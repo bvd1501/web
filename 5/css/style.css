@@ -222,38 +222,44 @@ body {
 
 .cards_list {
   margin: 0;
-  padding: 0;     
+  padding: 0;
+  margin-bottom: 25px;
   list-style-type: none;
   /*font-size: 0;  */
 }
 
 .card_item {
-  margin: 0; 
+  margin: 0;
   margin-bottom: 25px;
   margin-right: 25px;
   padding: 205px 25px 25px 25px;
   position: relative;
   display: inline-block;
   box-sizing: border-box;
-  width: 570px;     
+
+  width: 570px;
   height: 505px;
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);   
-  font-size: 20px;  
+
+
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
   background-position: top;
   background-size: 570px 180px;
-  background-repeat: no-repeat;   
+  background-repeat: no-repeat;
 }
 
-.card_item:nth-child(2n) {
+
+.card_item:nth-of-type(2n) {
   margin-right: 0;
 }
 
+
 .card1 {
-  background-image: url("../img/module_1.jpg");  
+  background-image: url("../img/module_1.jpg");
 }
 
 .card2 {
-  background-image: url("../img/module_2.jpg");  
+  background-image: url("../img/module_2.jpg");
 }
 
 .card3 {
@@ -261,14 +267,12 @@ body {
 }
 
 .card4 {
-  background-image: url("../img/module_4.jpg");  
+  background-image: url("../img/module_4.jpg");
 }
-
-
 
 .list_title {
   margin: 0;
-  padding: 0;  
+  padding: 0;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -276,34 +280,52 @@ body {
   color: #3f2aff;
 }
 
-
 .lessons {
+  margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
   display: block;
-  box-sizing: border-box; 
-  height: 225px;
-  max-height: 100%;
+  overflow: hidden;
   font-style: normal;
-  font-weight: 400;  
+  font-weight: 400;
   color: #333333;
-  list-style-type: none;  
+  list-style-type: none;
+
 }
-
-
 
 .num {
   margin: 0;
   padding: 0;
-  display: block; 
+  display: block;
   position: absolute;
   box-sizing: border-box;
   width: 45px;
   height: 46px;
-  right: 2px;
-  bottom: 4px;  
+  right: 25px;
+  bottom: 25px;
   font-weight: 400;
   font-size: 40px;
   line-height: 46px;
   text-align: right;
   color: #EAEAEA;
+}
+
+.button {
+  margin: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;  
+  padding: 25px 70px;
+  width: 275px;
+  height: 70px;
+  border-color: #3F2AFF;
+  background-color: #fff;
+  border: 2px solid #3F2AFF;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;  
+  color: #3F2AFF;
+  
 }
